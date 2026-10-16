@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AI SIGNALS：经一手公开来源核验的 AI 资讯简报">
+  <title>AI SIGNALS — 2026.10.16</title>
+  <style>
+    :root { --ink:#101010; --paper:#f4f3ef; --muted:#74736e; --line:#c9c8c1; --acid:#e8ff53; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:"Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif; }
+    a { color:inherit; text-decoration:none; }
+    .page { max-width:1440px; margin:auto; padding:24px 34px 48px; }
+    .topbar { display:flex; justify-content:space-between; align-items:center; padding-bottom:17px; border-bottom:1px solid var(--ink); font-size:11px; letter-spacing:.09em; text-transform:uppercase; }
+    .brand { font-weight:800; letter-spacing:.15em; }
+    .live { display:flex; gap:8px; align-items:center; color:var(--muted); }
+    .dot { width:7px; height:7px; border-radius:50%; background:#202020; display:inline-block; }
+    header { min-height:335px; display:grid; grid-template-columns:1.25fr .75fr; gap:50px; align-items:end; padding:58px 0 38px; border-bottom:1px solid var(--ink); }
+    h1 { font-size:clamp(54px,8vw,128px); line-height:.82; letter-spacing:-.085em; margin:0; font-weight:900; }
+    .edition { max-width:390px; justify-self:end; padding-bottom:5px; }
+    .edition p { margin:0 0 20px; font-size:15px; line-height:1.55; }
+    .edition .date { font:700 12px/1 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing:.1em; }
+    .meta { display:grid; grid-template-columns:1fr 1fr 1fr; border-bottom:1px solid var(--ink); }
+    .meta > div { padding:15px 14px 14px 0; font-size:12px; line-height:1.45; }
+    .meta > div + div { border-left:1px solid var(--line); padding-left:14px; }
+    .meta strong { display:block; margin-bottom:5px; font-size:10px; letter-spacing:.12em; text-transform:uppercase; }
+    .section-head { display:flex; justify-content:space-between; align-items:end; padding:55px 0 18px; border-bottom:2px solid var(--ink); }
+    .section-head h2 { margin:0; font-size:28px; letter-spacing:-.04em; }
+    .section-head span { font:11px/1 ui-monospace,monospace; color:var(--muted); }
+    .cards { display:grid; grid-template-columns:repeat(2,1fr); }
+    article { position:relative; min-height:330px; padding:23px 26px 25px 0; border-bottom:1px solid var(--line); }
+    article:nth-child(odd) { padding-right:26px; }
+    article:nth-child(even) { border-left:1px solid var(--line); padding-left:26px; }
+    .article-top { display:flex; justify-content:space-between; gap:12px; font:700 10px/1 ui-monospace,monospace; letter-spacing:.08em; }
+    .tag { color:var(--muted); }
+    article h3 { font-size:clamp(24px,2.25vw,37px); line-height:.98; letter-spacing:-.055em; margin:44px 0 15px; max-width:580px; }
+    article p { margin:0; max-width:550px; font-size:14px; line-height:1.62; }
+    .why { margin-top:16px; padding-top:14px; border-top:1px solid var(--line); color:#41413f; font-size:12px; line-height:1.55; }
+    .source { position:absolute; bottom:24px; right:0; border-bottom:1px solid var(--ink); font:700 10px/1.2 ui-monospace,monospace; letter-spacing:.04em; }
+    article:nth-child(even) .source { right:26px; }
+    .source:hover { background:var(--acid); }
+    .method { margin-top:64px; padding:26px 0; display:grid; grid-template-columns:1fr 2fr; gap:40px; border-top:2px solid var(--ink); border-bottom:1px solid var(--ink); }
+    .method h2 { margin:0; font-size:15px; letter-spacing:-.02em; }
+    .method p { margin:0; font-size:13px; line-height:1.65; }
+    footer { display:flex; justify-content:space-between; gap:24px; padding-top:15px; color:var(--muted); font:10px/1.45 ui-monospace,monospace; letter-spacing:.04em; }
+    @media (max-width:700px) { .page{padding:18px 18px 30px} header{grid-template-columns:1fr;gap:30px;min-height:0;padding:48px 0 26px}.edition{justify-self:start}.meta{grid-template-columns:1fr}.meta>div+div{border-left:0;border-top:1px solid var(--line);padding-left:0}.cards{grid-template-columns:1fr}article,article:nth-child(odd){min-height:310px;padding-right:0}article:nth-child(even){border-left:0;padding-left:0}.source,article:nth-child(even) .source{right:0}.method{grid-template-columns:1fr;gap:14px}footer{display:block} }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="topbar"><div class="brand">AI SIGNALS / FIELD NOTE</div><div class="live"><i class="dot"></i> 已核验 · 公开信息</div></div>
+    <header>
+      <h1>AI<br>SIGNALS</h1>
+      <div class="edition"><p>面向产品、研究与产业的 AI 资讯筛选。每一则主榜单均回链至发布主体的公开一手来源。</p><div class="date">ISSUE 014 / 2026.10.16 / CST</div></div>
+    </header>
+    <section class="meta"><div><strong>本期范围</strong>OpenAI · Google · Microsoft · Anthropic · 百度 · 腾讯</div><div><strong>精选条数</strong>06 / 信号优先，不追求信息堆叠</div><div><strong>采集口径</strong>官方公告优先；社区与社媒仅作线索，不作为事实依据</div></section>
+    <div class="section-head"><h2>今日精选 / 06</h2><span>TIME · CONTEXT · WHAT HAPPENED · SOURCE</span></div>
+    <section class="cards">
+      <article>
+        <div class="article-top"><span>01 / OPENAI</span><span class="tag">2026.10.15</span></div>
+        <h3>推出 Rosalind Academic Plan，切入学术研究工作流</h3>
+        <p><b>背景：</b>前沿模型正由通用对话向专业研究、教育场景延展。<br><b>内容：</b>OpenAI 新闻页将 “Introducing the Rosalind Academic Plan” 列为当日研究类发布；同日亦发布关于引导学生通过提问学习的内容。</p>
+        <p class="why"><b>观察：</b>学术版产品与教学方法论同时出现，显示其正在同时布局研究者与学习者两端。</p>
+        <a class="source" href="https://openai.com/news/" target="_blank" rel="noopener">官方新闻页 ↗</a>
+      </article>
+      <article>
+        <div class="article-top"><span>02 / ANTHROPIC</span><span class="tag">2026.10.14</span></div>
+        <h3>Claude 强化美国中期选举的信息与滥用防护</h3>
+        <p><b>背景：</b>选举周期使生成式 AI 的误导、仿冒与投票信息准确性成为高风险议题。<br><b>内容：</b>Anthropic 表示将继续在 Claude.ai 的相关问答中展示 TurboVote 链接，并计划接入 Democracy Works 汇集的官方投票信息；其分析样本为 25 万段美国用户对话。</p>
+        <p class="why"><b>核验要点：</b>样本范围、时间窗及比例均由发布方在原文脚注说明，不能外推为全体用户行为。</p>
+        <a class="source" href="https://www.anthropic.com/news/2026-us-midterms" target="_blank" rel="noopener">Anthropic 原文 ↗</a>
+      </article>
+      <article>
+        <div class="article-top"><span>03 / MICROSOFT</span><span class="tag">2026.10.12</span></div>
+        <h3>Azure Maia 进入多吉瓦级推理基础设施路线</h3>
+        <p><b>背景：</b>长上下文与多步骤智能体正在抬高推理侧的算力和能效要求。<br><b>内容：</b>微软称 Maia 200 已服务于部分生产工作负载；Maia 300 计划 2027 年开始生产部署，并面向长上下文、低延迟对话与持续式智能体任务优化。</p>
+        <p class="why"><b>观察：</b>这是硬件路线图与云上 AI 服务协同的信号；性能指标仍属于厂商披露口径。</p>
+        <a class="source" href="https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/" target="_blank" rel="noopener">Microsoft 官方博客 ↗</a>
+      </article>
+      <article>
+        <div class="article-top"><span>04 / TENCENT CLOUD</span><span class="tag">2026.10.15</span></div>
+        <h3>腾讯云 CloudQ 结束公测，进入商业化计费</h3>
+        <p><b>背景：</b>AI 运维与云治理助手从试用走向产品化，定价与配额成为实际落地的分水岭。<br><b>内容：</b>腾讯云文档称智能顾问 CloudQ 自 10 月 15 日起结束公测并正式计费；存量用户自动转入免费体验版，保留部分 AI 对话治理能力与资源。</p>
+        <p class="why"><b>观察：</b>它代表国内企业 AI 助手向订阅与积分组合计费迈进，适合持续关注客户采用和成本结构。</p>
+        <a class="source" href="https://cloud.tencent.com/document/product/1264/137720" target="_blank" rel="noopener">腾讯云产品文档 ↗</a>
+      </article>
+      <article>
+        <div class="article-top"><span>05 / GOOGLE</span><span class="tag">2026.10.02</span></div>
+        <h3>Google 回顾九月 AI 更新：Gemini 4 Argon 成为焦点</h3>
+        <p><b>背景：</b>模型发布正与语音、系统入口和科学应用并行推进。<br><b>内容：</b>Google 的月度汇总将 Gemini 4 Argon 描述为面向复杂任务的前沿模型，提及 100 万 token 输出上限；同时回顾 Gemini 应用连接能力、语音模型及科学项目更新。</p>
+        <p class="why"><b>核验要点：</b>此条是官方“九月回顾”，发布日期为 10 月 2 日，页面中的能力与定位均按该原文表述。</p>
+        <a class="source" href="https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/" target="_blank" rel="noopener">Google 官方博客 ↗</a>
+      </article>
+      <article>
+        <div class="article-top"><span>06 / BAIDU AI CLOUD</span><span class="tag">2026.10.16</span></div>
+        <h3>百度超级智能体大会西安站聚焦企业级 Agent 落地</h3>
+        <p><b>背景：</b>企业智能体正从演示走向工作流、生态与行业场景的组合落地。<br><b>内容：</b>百度智能云官网显示，西安站于 10 月 16 日举行，议程覆盖“企业级智能体建设”、产品实践与生态合作，并设置百度搭子实训与六类 Agent 产品体验。</p>
+        <p class="why"><b>观察：</b>这是活动与产品展示信号，而非新模型发布；后续成果应等待会后官方公告再确认。</p>
+        <a class="source" href="https://cloud.baidu.com/summit/super-agent-summit/xian" target="_blank" rel="noopener">百度智能云活动页 ↗</a>
+      </article>
+    </section>
+    <section class="method"><h2>验证说明</h2><p>本期于 2026 年 10 月 16 日（中国标准时间）整理。主榜单仅使用企业官网、官方博客或官方产品文档，并在每张卡片中保留来源链接。知乎、微博、微信公众号等公开社区渠道适合作为线索池与舆情观察层：若无对应一手公告或可靠交叉来源，不写入“已核验”主榜单。页面不把厂商自述性能、规划或活动议程表述为第三方独立结论。</p></section>
+    <footer><span>AI SIGNALS / BLACK &amp; WHITE EDITION</span><span>6 VERIFIED PUBLIC SIGNALS · REFRESHED 2026.10.16 CST</span></footer>
+  </main>
+</body>
+</html>
+
